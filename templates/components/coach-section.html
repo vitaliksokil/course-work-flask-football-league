@@ -4,45 +4,45 @@
     <div class="coach-background">
         <div class="container">
 
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="coach-title">
-                    <h2>
-                        Coach
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <div class="coach-item">
-                    <div class="card">
-                      <img src="{{ coach.img_path }}" class="card-img-top">
-                      <div class="card-body p-5">
-                          <div class="coach-item-title">
-                              <h3>
-                                  {{coach.name}} {{coach.surname}}
-                              </h3>
-                          </div>
-                          <div class="coach-item-text">
-                            <p class="card-text">
-                                {{coach.bio}}
-                            </p>
-                          </div>
-                      </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="coach-title">
+                        <h2>
+                            Coach
+                        </h2>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-2">
-                <div class="coach-button">
-                    <a href="{{ url_for('team') }}">
-                        View Team
-                    </a>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="coach-item">
+                        <div class="card">
+                            <img src="{{ coach.img_path }}" class="card-img-top">
+                            <div class="card-body p-5">
+                                <div class="coach-item-title">
+                                    <h3>
+                                        {{coach.name}} {{coach.surname}}
+                                    </h3>
+                                </div>
+                                <div class="coach-item-text">
+                                    <p class="card-text">
+                                        {{coach.bio}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="coach-button">
+                        <a href="{{ url_for('achievements',team_id=coach.team_id) }}">
+                            View Achievements
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

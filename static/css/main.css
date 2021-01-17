@@ -162,3 +162,8 @@ input {
     text-transform: none;
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
 }
+
+.team-section .coach-item-text .text{
+    height: 200px;
+    overflow-y: scroll;
+}
