@@ -1,0 +1,164 @@
+body{
+    font-family: 'Hanalei Fill', cursive;
+}
+a:hover{
+    color: #ffb82d;
+}
+p{
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+header{
+    background: #fff;
+}
+.logo{
+    font-family: 'East Sea Dokdo', cursive;
+
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0;
+}
+.logo h1{
+    color: #ffb82d;
+    font-size: 50px;
+}
+.logo span{
+    color: #151515;
+    font-size: 35px;
+}
+header ul li a{
+    text-transform: uppercase;
+    color: #151515;
+    font-size: 25px;
+}
+.main-section{
+    padding: 100px 0 ;
+    background: url("/static/images/main.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer{
+    padding: 50px 0;
+    background: #151515;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+}
+.title{
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,0.85);
+    padding: 10px;
+    border-radius: 10px;
+}
+.title span{
+    color: #ffb82d;
+}
+
+.about-section{
+    padding: 50px 0;
+}
+.about-img img{
+    width: 100%;
+}
+.about-img{
+    margin-bottom: 10px;
+}
+
+.coach-background{
+    padding: 100px 0;
+    background: url("/static/images/coach-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.coach-title h2{
+    color: #fff;
+    font-size: 64px;
+    text-align: center;
+}
+.coach-item .card-body {
+    text-align: center;
+}
+.coach-item-text p{
+    color: #7a7a7a;
+}
+.card{
+    border-radius: 0px;
+}
+.coach-button{
+    text-align: center;
+}
+
+.coach-button a{
+    background: #ffb82d;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-top: 40px;
+    color: #fff;
+    padding: 20px;
+}
+.coach-button a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.team-section{
+ padding: 100px 0;
+    background: url("/static/images/team-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.team-members{
+    padding: 20px 20px;
+}
+.team-members .coach-item{
+    margin-bottom: 30px;
+}
+.team-members .coach-item-title h3 {
+    font-size: 24px;
+}
+.team-members .coach-item-text {
+    font-size: 15px;
+}
+.team-members .card-body{
+    /*padding: 10px;*/
+}
+.card-body{
+    padding: 30px;
+}
+.achievements-section{
+     padding: 100px 0;
+    background: url("/static/images/achievements-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer .social-networks .nav-link img{
+    max-width: 40px;
+}
+
+.news-section{
+      padding: 100px 0;
+    background: url("/static/images/news-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.news-image img{
+    max-width: 100%;
+}
+
+input {
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}

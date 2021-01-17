@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %} <title>{{title}} </title>{% endblock %}
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='libs/bootstrap-4.3.1-dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Hanalei+Fill&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+
+{% include 'includes/header.html' %}
+
+{% block content %}{% endblock %}
+
+{% include 'includes/footer.html' %}
+<script src="{{ url_for('static',filename='libs/jquery/jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='libs/bootstrap-4.3.1-dist/js/bootstrap.js') }}"></script>
+</body>
+</html>

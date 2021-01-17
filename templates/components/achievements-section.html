@@ -1,0 +1,45 @@
+<section class="achievements-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="coach-title">
+                    <h2>
+                        Achievements
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-members">
+        <div class="row">
+            {% for item in achievements %}
+            <div class="col-2">
+                <div class="coach-item h-100">
+                    <div class="card h-100">
+                        <img src="{{ item.img_path }}" class="card-img-top">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="card-body-wrapper mt-auto">
+                                <div class="coach-item-title">
+                                    <h3>
+                                        {{ item.title }}
+                                    </h3>
+                                </div>
+                                <div class="coach-item-text">
+                                    <p class="card-text">
+                                        {{ item.achieved_at }}
+                                    </p>
+                                    <hr>
+                                    <p class="card-text">
+                                        {{ item.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
