@@ -313,7 +313,10 @@ def team_members(team_id):
     site_info = get_site_info()
     team = Team.query.filter_by(id=team_id).first()
     members = team.members
-    coach = next(member for member in members if member.role == 'Coach')
+    if members:
+        coach = next(member for member in members if member.role == 'Coach')
+    else:
+        coach = None
     return render_template('pages/team-members.html', site_info=site_info, members=members, coach=coach)
 
 
